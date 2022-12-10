@@ -78,7 +78,9 @@ https://console.cloud.google.com/cloud-build/repos;region=global よりリポジ
 
 - 各 GCP の API を有効にし、下記コマンドを実行し 各 GCP リソースを作成する
 
-Artifact Registry ページに移動し、Artifact Registory API を有効にする
+[Artifact Registry ページ](https://console.cloud.google.com/artifacts)に移動し、Artifact Registory API を有効にする
+[Cloud Build ページ](https://console.cloud.google.com/cloud-build)に移動し、Cloud Build に移動し、Cloud Build API を有効にする
+[Cloud Run ページ](https://console.cloud.google.com/run)に移動し、サービスの作成を押下し Cloud Run Admin API を有効にする
 
 ```bash
 cd infra
