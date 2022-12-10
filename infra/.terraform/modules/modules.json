@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"cloud-build","Source":"./modules/cloud-build","Dir":"modules/cloud-build"},{"Key":"artifact-registry","Source":"./modules/artifact-registry","Dir":"modules/artifact-registry"},{"Key":"cloud-run","Source":"./modules/cloud-run","Dir":"modules/cloud-run"},{"Key":"","Source":"","Dir":"."}]}
