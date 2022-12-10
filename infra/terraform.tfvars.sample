@@ -1,0 +1,2 @@
+gcp_project_id = "<作成したGCPプロジェクトのid>"
+primary_region = "asia-northeast1" # 作成したGCPプロジェクトのリージョン
