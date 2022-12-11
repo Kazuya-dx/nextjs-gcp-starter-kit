@@ -33,6 +33,6 @@ resource "google_cloudbuild_trigger" "deploy-frontend" {
     _APP_NAME                       = var.app_name
     _REGION                         = var.region
     _SERVICE_ACCOUNT                = var.cloud_run_service_account
-    _ARTIFACT_REPOSITORY_IMAGE_NAME = "${var.region}-docker.pkg.dev/${var.gcp_project_id}/${var.frontend_app_name}/nextjs_gcp_starter_kit"
+    _ARTIFACT_REPOSITORY_IMAGE_NAME = "${var.region}-docker.pkg.dev/${var.gcp_project_id}/${var.frontend_app_name}/${var.app_name}"
   }
 }
