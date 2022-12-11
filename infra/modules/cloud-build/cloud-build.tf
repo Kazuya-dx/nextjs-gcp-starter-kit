@@ -2,6 +2,7 @@
 variable "gcp_project_id" {}
 variable "region" {}
 variable "cloud_run_service_account" {}
+variable "app_name" {}
 variable "frontend_app_name" {}
 variable "github_owner" {}
 variable "github_app_repo_name" {}
@@ -29,6 +30,7 @@ resource "google_cloudbuild_trigger" "deploy-frontend" {
   filename       = "frontend/cloudbuild.yml"
   # 代入変数 (cloudbuild.yml 実行時に置換する)
   substitutions = {
+    _APP_NAME                       = var.app_name
     _REGION                         = var.region
     _SERVICE_ACCOUNT                = var.cloud_run_service_account
     _ARTIFACT_REPOSITORY_IMAGE_NAME = "${var.region}-docker.pkg.dev/${var.gcp_project_id}/${var.frontend_app_name}/nextjs_gcp_starter_kit"

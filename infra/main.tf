@@ -12,6 +12,7 @@ provider "google" {
 }
 
 locals {
+  app_name          = "nextjs-gcp-starter-kit"
   frontend_app_name = "nextjs-gcp-starter-kit"
 }
 
@@ -32,6 +33,7 @@ module "cloud-build" {
  gcp_project_id              = var.gcp_project_id
  region                      = var.primary_region
  cloud_run_service_account   = module.cloud-run.cloud_runner_service_account
+ app_name                    = local.app_name
  frontend_app_name           = local.frontend_app_name
  github_owner                = "Kazuya-dx"
  github_app_repo_name        = "nextjs-gcp-starter-kit"
