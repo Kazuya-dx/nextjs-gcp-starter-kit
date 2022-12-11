@@ -18,7 +18,7 @@ steps:
       - push
       - --all-tags
       - $_ARTIFACT_REPOSITORY_IMAGE_NAME
-    dir: "<アプリ名>/frontend"
+    dir: "/frontend"
     waitFor: ["build-frontend"]
   - id: deploy-frontend
     name: gcr.io/cloud-builders/gcloud
