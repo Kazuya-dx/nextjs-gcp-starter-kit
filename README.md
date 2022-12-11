@@ -18,6 +18,7 @@ GitHub: [https://github.com/new](https://github.com/new)
 gcloud コマンドを使用する際の Google アカウントを指定するために、下記コマンドを実行し Google Cloud Platform の認証を行ってください。認証はプロジェクトを作成したアカウントで行うようにしましょう。
 
 ```bash
+cd infra
 gcloud auth login
 ```
 
@@ -80,7 +81,6 @@ chmod +x infra/tf.sh
 作成したバケット上で terraform リソースを作成しましょう。
 
 ```bash
-cd infra
 ./tf.sh init -backend-config="bucket=<作成したバケット名>"
 # 例 ./tf.sh init -backend-config="bucket=nextjs_gcp_starter_kit"
 ```
@@ -121,7 +121,6 @@ infra ディレクトリ内にある `[main.tf](http://main.tf)` 内の **app_na
 以上で GCP のリソースを作成する準備ができたので、下記のコマンドを順番に実行し 各 GCP リソースを作成しましょう。
 
 ```bash
-cd infra
 ./tf.sh init
 ./tf.sh plan
 ./tf.sh apply
