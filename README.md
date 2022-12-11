@@ -81,13 +81,7 @@ gcp_project_id = "<作成したGCPプロジェクトのid>"
 primary_region = "<作成したGCPプロジェクトのリージョン>"
 ```
 
-infra ディレクトリ内にある `[main.tf](http://main.tf)` 内の <GitHub アカウント名>, <GitHub レポジトリ名> を自身のアカウント名、事前に用意したリポジトリ名に変更してください。
-
-```
-# 例
-github_owner         = "Kazuya-dx"
-github_app_repo_name = "nextjs-gcp-starter-kit"
-```
+infra ディレクトリ内にある `[main.tf](http://main.tf)` 内の **frontend_app_name**, **github_owner**, **github_app_repo_name** をそれぞれ **アプリ名**, **自身の GitHub アカウント名**, **事前に用意したリポジトリ名** に変更してください。
 
 各 GCP リソースの API を有効にします。Cloud Build に関しては事前に用意したリポジトリと接続する必要があるため下のフローに従って接続してください。
 

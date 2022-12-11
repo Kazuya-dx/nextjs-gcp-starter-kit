@@ -12,7 +12,7 @@ provider "google" {
 }
 
 locals {
-  frontend_app_name = "frontend"
+  frontend_app_name = "nextjs-gcp-starter-kit"
 }
 
 module "artifact-registry" {
