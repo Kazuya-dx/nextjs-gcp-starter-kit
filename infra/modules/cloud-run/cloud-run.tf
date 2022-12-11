@@ -7,7 +7,7 @@ variable "gcp_project_id" {
 resource google_service_account app_runner {
   project = var.gcp_project_id
   account_id = "app-runner"
-  display_name = "Cloud RunnerService Account"
+  display_name = "Cloud Runner Service Account"
 }
 
 # 編集者に追加
